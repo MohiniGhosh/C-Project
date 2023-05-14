@@ -3,11 +3,11 @@
 
 int main() {
     int choice;
-    float a,b,result;
+    float a,b,result,fac=1;
     
 
     printf("Scientific Calculator\n");
-    printf("1.Addition\n2.Subtraction\n3.Multiplication\4.Division\n5.modules\n6.factorial\n7.Square Root\n8.Power\n9.Logarithm\n10.Sine\n11.Cosine\n12.Tangent\n");
+    printf("1.Addition\n2.Subtraction\n3.Multiplication\4.Division\n.5factorial\n6.Square Root\n7.Power\n8.Logarithm\n9.Sine\n10.Cosine\n11.Tangent\n");
    
     printf("Enter your choice: ");
     scanf("%d", &choice);
@@ -45,13 +45,13 @@ int main() {
 		    float fac;
 		    printf("Enter a number to find factorial: ");
             scanf("%f", &a);
-            fac=1;
+            int i;
             for(int i=1;i<=a;i++){
             	fac=fac*i;
 			}
             printf("fac: %.2f", fac);
             break;
-		    case 6:
+        case 6:
         	
             printf("Enter a number to find square root: ");
             scanf("%f", &a);
